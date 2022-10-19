@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600&family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    scroll-behavior: smooth;
+}
+
+a{
+    font-style:none;
+    text-decoration: none;
+}
+h1{
+    cursor: default;
+}
+#texto{
+    cursor: default;  
+}
+
+body{
+    background: linear-gradient(180deg, #190F40 0%, #3F46BF 100%);
+       background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;           
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #190F40;       
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #3F46BF;  
+    border-radius: 10px;     
+    border: 2px solid #190F40;
+  }
+  ::placeholder{
+    color:rgb(20,10,25, 75%)
+}
+
+#container{
+    width: 100%;
+    background-color: red;
+    height: 100%;
+    background-color: #190F40;
+    border-radius: 8px;
+    outline: 2px solid #FFDE29;
+    border: 2px solid #FF921E;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#container h1 {
+    color:white;
+    font-family: 'Press Start 2P';
+    margin-top: 50px;
+    font-size: 35px;
+    line-height: 60px;
+}
+
+#container a{
+    margin: auto 0;
+}
+
+#btnVoltar{
+    width: 270px;
+    height: 70px;
+    border: none;
+    outline: 3px solid #B34F1A;
+    border-radius: 20px;
+    color:#639CF1;
+    font-family: 'Press Start 2P';
+    background-color: #140A19;
+    font-size: 30px;
+    margin-top: 20px;
+    transition: outline 0s, background-color 0.3s;
+}
+#btnVoltar:hover{
+    background-color: #190F40;
+
+}
+#btnVoltar:active{
+    outline: 3px solid #FF921E;
+}
+
+.borda2{
+    width: 60%;
+    height: 60vh;
+    background-color: #140A19;
+    outline: 4px solid #B34F1A;
+    border: 4px solid #FF921E;
+    border-radius: 10px;
+    margin: 50px 0;
+    flex-direction: row-reverse;
+
+}
+
+@media only screen and (max-width: 800px){
+
+.borda2{
+    height: 60%;
+}    
+
+#container h1{
+    margin: 50px 20px 0 20px;
+    font-size: 27px;
+}
+}
+
+@media only screen and (max-width: 350px){
+    .borda2{
+        height: 60%;
+        margin: 20px 0;
+        /* display: none; */
+    }    
+    #container{
+        padding: 10px 0;
+    }
+    #container h1{
+        margin: 0;
+        font-size: 17px;
+    }
+    #btnVoltar{
+        width: 100%;
+        /* height: 70px; */
+        border: none;
+        outline: 3px solid #B34F1A;
+        border-radius: 20px;
+        color:#639CF1;
+        font-family: 'Press Start 2P';
+        background-color: #140A19;
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        transition: outline 0s, background-color 0.3s;
+    }
+
+}
